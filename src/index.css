@@ -347,4 +347,15 @@ footer p{
   flex: 1 1 24%;
   margin-bottom: 30px;
 }
+.productDetails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.imagearea img{
+  max-width: 100%;
+  width: 180px;
+}
 

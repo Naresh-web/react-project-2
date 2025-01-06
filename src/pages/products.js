@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import Layout from '../layout';
 import { Api } from '../services/api';
+import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
+  const router = useNavigate()
   const fetchProducts = async () => {
     const data = await Api('https://api.escuelajs.co/api/v1/products');
     if(data){
       console.log(data);
       setProducts(data)
     }
+  }
+  const goToProductDetails = (id) => {
+    router(`/productDetails/${id}`)
   }
   useEffect(() => {
     fetchProducts()
@@ -26,7 +31,7 @@ const Products = () => {
                   products.map( (item) => {
                 const {id, title, images} = item
                 return <>
-                  <li key={id}>
+                  <li key={id} onClick={() => goToProductDetails(id)}>
                   <img src={item.category?.image} alt="" />
 
                   {title}

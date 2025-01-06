@@ -7,6 +7,7 @@ import UserDetailsPage from './pages/userDetails';
 import LoginPage from './pages/login';
 import ProfilePage from './pages/profile';
 import ProductsPage from './pages/products';
+import ProductDetails from './pages/productDetails';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path='/users' element={<UsersPage/>}/>
             <Route path='/userDetails/:id' element={<UserDetailsPage/>}/>
             <Route path='/products' element={<ProductsPage/>}/>
+            <Route path='/productDetails/:id' element={<ProductDetails/>}/>
         </Routes>
       </BrowserRouter>
       </>

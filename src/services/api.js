@@ -60,3 +60,14 @@ export const fetchProfile = async (token) => {
     console.log(error);
   }
 }
+
+/** Fetch Product details by ID **/
+export const fetchProductDetailsById = async (id) => {
+  try {
+    const resp = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`)
+    const data = await resp.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+}
