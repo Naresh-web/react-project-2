@@ -244,7 +244,7 @@ footer p{
 .profileDetails{
   margin: auto;
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 15px;
 }
 .profileDetails p{
@@ -300,4 +300,51 @@ footer p{
   text-align: left;
 }
 /** User Details End **/
+
+.profilecard{
+  width: 450px;
+  max-width: 100%;
+  margin: 30px auto;
+  background: #f5f5f5;
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+.topArea{
+  padding: 40px 0 80px 0;
+  background: aquamarine;
+}
+.pDetails{
+  padding: 15px 0;
+}
+.pDetails img{
+  max-width: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: -76px;
+}
+.detailsArea{
+  margin-top: 20px;
+}
+.detailsArea p{
+  font-size: 14px;
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #ffffff;
+}
+.detailsArea p:last-child{
+  border-bottom: 1px solid transparent;
+}
+.productList ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1%;
+}
+.productList ul li{
+  flex: 1 1 24%;
+  margin-bottom: 30px;
+}
 
