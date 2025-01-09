@@ -25,10 +25,11 @@ const Profile = () => {
   return (
     <>
         <Layout>
-        <div className="profilecard">
+        {profileData.length === 0 ? (<p>Loading...</p>) : (
+            <div className="profilecard">
             <div className="topArea">Welcome <b>{profileData.name}</b></div>
             <div className="pDetails">
-                {profileData ? (<img src={profileData.avatar} alt="User Image" />) : (<img src={UserImg} alt="User Image" />)}
+                {profileData.length === 0 ? (<img src={UserImg} alt="User Image" />) : (<img src={profileData.avatar} alt="User Image" />)}
                 <div className="detailsArea">
                     <p>Name: {profileData.name}</p>
                     <p>Email: {profileData.email}</p>
@@ -39,6 +40,7 @@ const Profile = () => {
                 </div>
             </div>
         </div>
+        )}
         </Layout>
     </>
   )

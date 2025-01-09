@@ -273,9 +273,17 @@ footer p{
 /** User Details **/
 .userDetails{
   align-content: center;
+  justify-content: center;
   margin: auto;
   height: 100vh;
   text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+.userDetails img{
+  max-width: 100%;
+  width: 180px;
+  margin: 0 auto;
 }
 .detailsCard{
   display: flex;

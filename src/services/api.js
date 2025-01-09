@@ -1,4 +1,3 @@
-import React from 'react'
 
 /** Global API */
 export const Api = async (URL) => {

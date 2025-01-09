@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { fetchProductDetailsById } from '../services/api'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const ProductDetails = () => {
   const params = useParams();
@@ -23,6 +23,12 @@ const ProductDetails = () => {
             </div>
             <div className="content">
               {productDetails.title}
+            </div>
+            <br/>
+            <div className="backtohome">
+            <Link to='/products'>
+              <button type="button">Back to products</button>
+            </Link>
             </div>
         </div>
     </>

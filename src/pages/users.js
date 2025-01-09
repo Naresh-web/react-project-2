@@ -29,7 +29,7 @@ const Users = () => {
                            const {id, name} = item;
                         return <>
                         <li key={id} onClick={() => fetchUserDetailsById(id)}>
-                            <p>{id}</p>
+                            <img src={item.avatar} alt="" />
                             <p>{name}</p>
                         </li>
                         </>
